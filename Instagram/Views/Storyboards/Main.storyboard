@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YkS-mT-n6L">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="YDh-LU-9rF" kind="relationship" relationship="viewControllers" id="KIS-Ii-7ZG"/>
@@ -34,7 +35,7 @@
         <scene sceneID="MHg-63-8ji">
             <objects>
                 <navigationController id="hMj-kn-uOZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="6rb-7n-ShZ"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="6rb-7n-ShZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e88-dj-1zE">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,7 +52,7 @@
         <scene sceneID="DrP-Zf-aOC">
             <objects>
                 <navigationController id="FQm-bl-h1B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" id="xaw-fo-M9M"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="xaw-fo-M9M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TUG-PN-Xfe">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -197,11 +198,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="125" height="128"/>
-        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -77,3 +77,9 @@ extension UIColor {
         return UIColor(red: .random, green: .random, blue: .random, alpha: 1.0)
     }
 }
+
+extension String {
+    func safeDatabaseKey() -> String {
+        return self.replacingOccurrences(of: ".", with: "-").replacingOccurrences(of: "@", with: "-")
+    }
+}
