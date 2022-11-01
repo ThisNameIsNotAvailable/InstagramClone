@@ -25,6 +25,13 @@ final class EditProfileViewController: UIViewController, UITableViewDataSource {
     private var models = [[EditProfileFormModel]]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        if #available(iOS 15, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.titleTextAttributes = [
+                .foregroundColor : UIColor.label]
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        }
         configureModels()
         tableView.tableHeaderView = createTableHeaderView()
         view.backgroundColor = .systemBackground
